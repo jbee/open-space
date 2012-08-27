@@ -123,4 +123,21 @@ Properties are:
 	- Allows to chose different materials in one ship
 	- Allows to use inner armour
 - Stops beam and missile damage 
-- Dependent on the material just seperate single blocks or connected blocks can be created. E.g. metals cannot share damage where something fluid can - so metals are always single blocks and fluids can be connected blocks. 	 
+- Dependent on the material just seperate single blocks or connected blocks can be created. E.g. metals cannot share damage where something fluid can - so metals are always single blocks and fluids can be connected blocks.
+
+## Computer
+Computers are mainly used as target computer. The main difference between different computer techniques is the reaction time needed to recompute the targeting for a moving target.
+
+Damage is anti-proportional to 
+- reaction time
+- mobility of the target
+
+Probability of a miss
+- anti-proportional to reaction time
+- proportional to mobility of the target
+
+When targeting specific components it becomes harder to compute. Some computers are especially good at targeting components.
+
+
+
+  	 
