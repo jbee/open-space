@@ -73,6 +73,14 @@ The damage a component block can take before it stops working depends on several
 - Material
 - Structural points (mainly derived from size)
 
+Some thoughts about damage
+- Mass passes shields
+- Mass disrupts components dependent on their material (its strength). This allows to cause damage on inner components even though the outer is not destroyed yet. The damage cause will be weakened by the disrupted material.
+- Missiles passes shields but cannot disrupt components.
+- Components that are destroyed are passed as if they are non existent.
+- A component has a degree of maximum damage where from it can be repaired again.
+- Scanner effect the damage (better knowledge causes better hits) 
+
 ### Colors
 - Weapons: Red
 	- Ray (Beam): Purple
@@ -88,6 +96,7 @@ The damage a component block can take before it stops working depends on several
 - Drive:
 	- Repulsion (Mass based): ??
 	- ?? (Enery based): ?
+- Scanner: ?
 - Cargo space: ?
 - Special: ?
 
@@ -100,3 +109,18 @@ The damage a component block can take before it stops working depends on several
 		- More connections are possible
 		- The relative required space for requirements like control or energy can be reduced
 	- the maximum is derived from the material properties (unclear now)  
+	
+Properties are:
+- Strength
+- ?
+
+## Scanner
+- Allow to see opponents component structure and current state
+- Allow to target specific components
+
+## Armour
+- Is placed as blocks/components as well.
+	- Allows to chose different materials in one ship
+	- Allows to use inner armour
+- Stops beam and missile damage 
+- Dependent on the material just seperate single blocks or connected blocks can be created. E.g. metals cannot share damage where something fluid can - so metals are always single blocks and fluids can be connected blocks. 	 

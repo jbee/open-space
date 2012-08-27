@@ -15,3 +15,5 @@ Later some code might be added ;)
 - <a href="spaceships.html">Spaceships</a>
 - <a href="planets.html">Planets</a>
 - <a href="terminals.html">Terminals</a>
+- <a href="battles.html">Battles</a>
+- <a href="weapons.html">Weapons</a>
