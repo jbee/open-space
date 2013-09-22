@@ -93,10 +93,10 @@ h2 {
 
 h2:BEFORE {
 	content: ' ';
-	display: inline-block;
 	height: 1px;
 	width: 50%;
 	background-color: #2e7a7c;
+	display: inline-block;
 	position: absolute;
 	margin-top: 1.3em;
 }

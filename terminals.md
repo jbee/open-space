@@ -44,3 +44,17 @@ Thereby the "system" just learns once how to read a specific record format and t
 
 ## Actions
 Each Screen contains one or more action-sets. Actions are possible operations described as data. The result of an action is data as well. A typical example would be a selection.
+
+## State
+In general there are 2 kinds of state: 
+
+- Navigation and selection state that is not changing the turn/game state at all
+- Reconfiguration state that changes the turn/game state
+	- Done or directly triggered by the player
+	- triggered as an automatic reaction to a player action
+	- triggered as an automatic reaction as a player configuration
+	- triggered as an automatic reaction to a game rule (the game mechanics)
+	
+Screens could work a bit like RESTful HTTP resources. When you access them with a special navigation state you'll access another view of that resource.
+E.g. colony view with colony id is a single colony screen, without it is a list of colonies. 
+That would mean a view has multiple screens depending on the navigation state a particular screen is picked. Thereby a screen can expect a particular navigation state.
